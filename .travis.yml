@@ -1,7 +1,11 @@
-sudo: false
 language: node_js
+sudo: false
 node_js:
-  - "0.11"
-  - "0.10"
-notifications:
-  email: false
+  - '0.10'
+  - '0.12'
+  - 'io.js'
+  - '4.2'
+cache:
+  directories:
+  - node_modules
+script: "npm test"
